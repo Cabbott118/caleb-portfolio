@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography';
 const About = () => {
   return (
     <Box>
-      <Typography variant='h1'>About</Typography>
+      <Typography variant='h1' color='primary'>
+        About
+      </Typography>
     </Box>
   );
 };

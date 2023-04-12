@@ -11,7 +11,9 @@ const background = '../images/pexels-luis-gomes-546819.jpg';
 const Home = () => {
   return (
     <Box>
-      <Typography variant='h1'>Home</Typography>
+      <Typography variant='h1' color='primary'>
+        Home
+      </Typography>
     </Box>
   );
 };
