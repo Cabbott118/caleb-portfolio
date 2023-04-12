@@ -6,7 +6,9 @@ import Typography from '@mui/material/Typography';
 
 const Contact = () => {
   return (
-    <Box>
+    <Box sx={() => ({
+      minHeight: '100vh',
+    })}>
       <Typography variant='h1' color='primary'>
         Contact
       </Typography>

@@ -6,7 +6,9 @@ import Typography from '@mui/material/Typography';
 
 const Projects = () => {
   return (
-    <Box>
+    <Box sx={() => ({
+      minHeight: '100vh',
+    })}>
       <Typography variant='h1' color='primary'>
         Projects
       </Typography>

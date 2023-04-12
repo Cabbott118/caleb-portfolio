@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 // MUI
 import AppBar from '@mui/material/AppBar';
@@ -9,29 +9,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-const pages = [
-  {
-    name: 'Home',
-    route: '/',
-  },
-  {
-    name: 'About',
-    route: '/about',
-  },
-  {
-    name: 'Projects',
-    route: '/projects',
-  },
-  {
-    name: 'Contact',
-    route: '/contact',
-  },
-];
+import { pages } from '../utility/routes';
 
 const Navbar = () => {
   let location = useLocation();
   let { pathname } = location;
-
   return (
     <AppBar position='static' color='transparent'>
       <Container maxWidth='xl'>
@@ -45,7 +27,7 @@ const Navbar = () => {
               <Link to={page.route} key={page.name}>
                 <Button
                   variant='text'
-                  color={pathname == page.route ? 'primary' : 'secondary'}
+                  color={pathname === page.route ? 'primary' : 'secondary'}
                   sx={{
                     textTransform: 'none',
                   }}

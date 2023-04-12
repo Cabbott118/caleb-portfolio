@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 // MUI
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -27,6 +28,7 @@ function App() {
           <Route path='contact' element={<Contact />} />
           <Route path='projects' element={<Projects />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );
