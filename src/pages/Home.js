@@ -25,7 +25,7 @@ const Headline = () => {
         })}
       >
         <Grid>
-          <Typography variant='h5' color='secondary'>
+          <Typography variant='h3' color='secondary'>
             Hello!
           </Typography>
         </Grid>
@@ -61,9 +61,9 @@ const SideContent = () => {
         alignItems='center'
       >
         <Grid>
-          <Typography variant='h1' color='primary'>
-            Filler content
-          </Typography>
+          {/* <Typography variant='h6' color='primary'>
+            Let's see what we can build together!
+          </Typography> */}
         </Grid>
       </Grid>
     </Grid>

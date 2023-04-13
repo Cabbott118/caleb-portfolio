@@ -51,8 +51,9 @@ function Footer() {
         <Grid
           container
           direction='row'
-          justifyContent='space-evenly'
+          justifyContent='center'
           alignItems='center'
+          spacing={6}
           sx={() => ({
             minWidth: '100vw',
           })}
