@@ -44,7 +44,7 @@ function Footer() {
       justifyContent='space-evenly'
       alignItems='center'
       sx={() => ({
-        minHeight: '20vh',
+        height: '100px',
       })}
     >
       <Grid>
