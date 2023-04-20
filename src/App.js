@@ -12,6 +12,9 @@ import Footer from './components/Footer';
 // MUI
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+// Styled Components
+import styled from 'styled-components';
+
 // Utility
 import themeFile from './utility/theme';
 
