@@ -1,12 +1,12 @@
 const theme = {
   palette: {
     primary: {
-      main: '#9cc9ad',
-      contrastText: '#a8a8a8',
+      main: '#01be96',
+      contrastText: '#fff',
     },
     secondary: {
-      main: '#2c3e50',
-      contrastText: '#a8a8a8',
+      main: '#fff',
+      contrastText: '#2c3e50',
     },
   },
   breakpoints: {

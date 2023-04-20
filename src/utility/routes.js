@@ -5,19 +5,23 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 const pages = [
   {
     name: 'Home',
-    route: '/',
+    location: '#home',
   },
   {
-    name: 'About',
-    route: '/about',
+    name: 'Services',
+    location: '#services',
   },
   {
     name: 'Projects',
-    route: '/projects',
+    location: '#projects',
+  },
+  {
+    name: 'Testimonials',
+    location: '#clients',
   },
   {
     name: 'Contact',
-    route: '/contact',
+    location: '#footer',
   },
 ];
 
