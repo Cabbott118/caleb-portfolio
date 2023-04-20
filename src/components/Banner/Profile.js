@@ -2,14 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 
 // MUI
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import { AiFillGithub } from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
+// Icons
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 import { Slide } from 'react-awesome-reveal';
+
+const iconStyles = {
+  width: '2.3rem',
+  height: '2rem',
+  clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+  backgroundColor: '#01be96',
+  position: 'relative',
+  transition: 'transform 400ms ease-in-out',
+  '&:hover': {
+    transform: 'rotate(360deg)',
+  },
+};
 
 const Profile = () => {
   return (
@@ -64,23 +79,35 @@ const Profile = () => {
             >
               Let's talk
             </Button>
-            <Social>
-              <Typography variant='p' color='#fff'>
-                Check out my
-              </Typography>
-              <div className='social-icons'>
-                <span>
-                  <a href='/'>
-                    <AiFillGithub />
-                  </a>
-                </span>
-                <span>
-                  <a href='/'>
-                    <FaLinkedinIn />
-                  </a>
-                </span>
-              </div>
-            </Social>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                marginTop: '3rem',
+              }}
+            >
+              <Grid item>
+                <Typography variant='p' color='#fff'>
+                  Check out my
+                </Typography>
+              </Grid>
+              <Grid item className='social-icons'>
+                <Grid container spacing={2}>
+                  <Grid item>
+                    {' '}
+                    <GitHubIcon
+                      color='secondary'
+                      fontSize='small'
+                      sx={iconStyles}
+                    />
+                  </Grid>
+                  <Grid item>
+                    {' '}
+                    <LinkedInIcon sx={iconStyles} />
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
           </Slide>
         </Grid>
         <Slide direction='right'>
@@ -151,43 +178,43 @@ export default Profile;
 //     }
 //   }
 // `;
-const Social = styled.div`
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  p {
-    font-size: 0.9rem;
-    @media (max-width: 690px) {
-      font-size: 0.7rem;
-    }
-  }
+// const Social = styled.div`
+//   margin-top: 3rem;
+//   display: flex;
+//   align-items: center;
+//   gap: 1rem;
+//   p {
+//     font-size: 0.9rem;
+//     @media (max-width: 690px) {
+//       font-size: 0.7rem;
+//     }
+//   }
 
-  .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    span {
-      width: 2.3rem;
-      height: 2rem;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be96;
-      position: relative;
-      transition: transform 400ms ease-in-out;
-      :hover {
-        transform: rotate(360deg);
-      }
-    }
+//   .social-icons {
+//     display: flex;
+//     align-items: center;
+//     gap: 1rem;
+//     span {
+//       width: 2.3rem;
+//       height: 2rem;
+//       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+//       background-color: #01be96;
+//       position: relative;
+//       transition: transform 400ms ease-in-out;
+//       :hover {
+//         transform: rotate(360deg);
+//       }
+//     }
 
-    a {
-      color: #fff;
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-`;
+//     a {
+//       color: #fff;
+//       position: absolute;
+//       top: 55%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+// `;
 const ProfileImg = styled.div`
   img {
     width: 25rem;
