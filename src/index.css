@@ -3,6 +3,7 @@
 
 * {
   margin: 0;
+<<<<<<< HEAD
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -64,6 +65,8 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+=======
+>>>>>>> 71cacd1d96aad469595849785cdf6240a1e02a1b
 }
 
 /* Handle */

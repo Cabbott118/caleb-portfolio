@@ -10,7 +10,7 @@ import { iconInfo } from '../utility/routes';
 const Icons = () => {
   let grid = iconInfo.map((info) => (
     <Grid key={info.key}>
-      <Link color='primary' target='_blank' href={info.href}>
+      <Link color='textSecondary' target='_blank' href={info.href}>
         <info.iconName fontSize='large' />
       </Link>
     </Grid>
@@ -44,16 +44,16 @@ function Footer() {
       justifyContent='space-evenly'
       alignItems='center'
       sx={() => ({
-        minHeight: '20vh',
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        height: '100px',
       })}
     >
       <Grid>
         <Grid
           container
           direction='row'
-          justifyContent='space-evenly'
+          justifyContent='center'
           alignItems='center'
+          spacing={6}
           sx={() => ({
             minWidth: '100vw',
           })}
