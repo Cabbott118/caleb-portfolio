@@ -22,7 +22,13 @@ const ServicesCards = () => {
     >
       {services.map((service, i) => (
         <Grid item key={i}>
-          <Card sx={{ maxWidth: 345, backgroundColor: '#124559' }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              backgroundColor: '#124559',
+              filter: 'drop-shadow(0px 1px 10px #124559)',
+            }}
+          >
             <Grid
               container
               direction='column'

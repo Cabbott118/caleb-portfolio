@@ -35,6 +35,9 @@ const ProjectsSection = () => {
         >
           Take a look at some of my latest works
         </Typography>
+        <Typography variant='caption' color='secondary'>
+          Hover over the project title to view the description
+        </Typography>
         <Projects />
       </Container>
     </Box>
