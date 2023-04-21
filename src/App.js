@@ -1,9 +1,9 @@
 // Components, Pages, & Sections
 import BannerSection from './sections/BannerSection';
-import Clients from './components/Clients/Clients';
 import Footer from './components/Footer/Footer';
 import ProjectsSection from './sections/ProjectsSection';
 import ServicesSection from './sections/ServicesSection';
+import TestimonialsSection from './sections/TestimonialsSection';
 
 // MUI
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -19,8 +19,7 @@ function App() {
       <BannerSection />
       <ServicesSection />
       <ProjectsSection />
-      {/* <Clients /> */}
-
+      <TestimonialsSection />
       <Footer />
     </ThemeProvider>
   );

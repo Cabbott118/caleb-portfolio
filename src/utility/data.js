@@ -51,23 +51,27 @@ const projects = [
   },
 ];
 
-let slickSettings = {
+const slickSettingsProjects = {
   className: 'center',
   centerMode: true,
   slidesToShow: 3,
   swpieToSlide: true,
   dots: true,
-  customPaging: (i) => (
-    <div
-      style={{
-        width: '30px',
-        color: '#fff',
-        border: '1px #01be96 solid',
-      }}
-    >
-      {i + 1}
-    </div>
-  ),
+  // customPaging: (i) => (
+  //   <div
+  //     style={
+  //       i === state.currentSlide
+  //         ? {
+  //             width: '30px',
+  //             color: '#fff',
+  //             border: '1px #01be96 solid',
+  //           }
+  //         : null
+  //     }
+  //   >
+  //     {i + 1}
+  //   </div>
+  // ),
   responsive: [
     {
       breakpoint: 990,
@@ -90,4 +94,85 @@ let slickSettings = {
   ],
 };
 
-export { services, projects, slickSettings };
+const slickSettingsTestimonials = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 530,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+const clients = [
+  {
+    name: 'John Michel',
+    position: 'web developer',
+    img_url:
+      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
+    stars: 3,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+  {
+    name: 'John Michel',
+    position: 'web developer',
+    img_url:
+      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
+    stars: 4,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+  {
+    name: 'John Michel',
+    position: 'web developer',
+    img_url:
+      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
+    stars: 5,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+  {
+    name: 'John Michel',
+    position: 'web developer',
+    img_url:
+      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
+    stars: 5,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+];
+
+export {
+  services,
+  projects,
+  slickSettingsProjects,
+  slickSettingsTestimonials,
+  clients,
+};

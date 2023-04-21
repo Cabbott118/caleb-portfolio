@@ -36,6 +36,9 @@ const Project = (props) => {
           height: '100%',
           objectFit: 'cover',
           transition: 'transform 400ms ease-in-out',
+          '&:hover': {
+            transform: 'scale(1.3)',
+          },
         }}
       />
       <Box
