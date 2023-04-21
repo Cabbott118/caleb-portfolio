@@ -1,18 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// MUI
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+
 const Project = (props) => {
   const { img, disc } = props.item;
   return (
     <Container className='project'>
       <img src={img} alt='project' />
-      <div className='disc'>
-        <h1>Description</h1>
-        <p>
+      <Box
+        className='desc'
+        sx={[
+          {
+            position: 'absolute',
+            right: '0',
+            left: '0',
+            bottom: '-20rem',
+            '&:hover': {
+              bottom: '0',
+            },
+            textAlign: 'left',
+            padding: '0.5rem',
+            background:
+              'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8))',
+            transition: 'all 400ms ease-in-out',
+          },
+        ]}
+      >
+        <Typography variant='h1' color='secondary' sx={{ fontSize: '1rem' }}>
+          Project title
+        </Typography>
+        <Typography
+          variant='p'
+          color='secondary'
+          sx={{
+            width: '90%',
+            fontSize: '0.8rem',
+          }}
+        >
           {disc}
-          <a href='/'>demo</a>
-        </p>
-      </div>
+        </Typography>
+        <Link underline='hover' sx={{ marginLeft: '.4rem' }}>
+          Demo
+        </Link>
+      </Box>
     </Container>
   );
 };
@@ -34,34 +68,12 @@ const Container = styled.div`
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }
-  .disc {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -10rem;
-    text-align: left;
-    padding: 0.5rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
-    transition: all 400ms ease-in-out;
-    h1 {
-      font-size: 1rem;
-    }
-
-    p {
-      width: 90%;
-      font-size: 0.8rem;
-      a {
-        margin-left: 0.4rem;
-        color: red;
-      }
-    }
-  }
 
   :hover > img {
     transform: scale(1.3);
   }
 
-  :hover > .disc {
+  :hover > .desc {
     bottom: 0;
   }
 `;

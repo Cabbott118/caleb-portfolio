@@ -106,7 +106,6 @@ const Buttons = styled.div`
     top: 45%;
     right: -1rem;
   }
-
   .back {
     left: -1rem;
   }

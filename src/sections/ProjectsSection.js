@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import ServicesCards from '../components/Services/ServicesCards';
+import Projects from '../components/Projects/Projects';
 
 // MUI
 import Box from '@mui/material/Box';
@@ -10,11 +10,12 @@ import Typography from '@mui/material/Typography';
 
 import theme from '../utility/theme';
 
-const ServicesSection = () => {
+const ProjectsSection = () => {
   return (
     <Box
+      id='projects'
       sx={{
-        background: '#01161e',
+        background: '#124559',
       }}
     >
       <Container maxWidth='lg' id='services' sx={{ padding: '3rem' }}>
@@ -22,7 +23,7 @@ const ServicesSection = () => {
           variant='h6'
           sx={{ padding: '1rem 0', color: theme.palette.secondary.main }}
         >
-          My <span className='green'>services</span>
+          Recent <span className='green'>projects</span>
         </Typography>
         <Typography
           variant='h1'
@@ -33,12 +34,12 @@ const ServicesSection = () => {
             paddingBottom: '2rem',
           }}
         >
-          Here's what I can do for you
+          Take a look at some of my latest works
         </Typography>
-        <ServicesCards />
+        <Projects />
       </Container>
     </Box>
   );
 };
 
-export default ServicesSection;
+export default ProjectsSection;

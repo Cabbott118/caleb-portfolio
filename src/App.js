@@ -2,7 +2,7 @@
 import BannerSection from './sections/BannerSection';
 import Clients from './components/Clients/Clients';
 import Footer from './components/Footer/Footer';
-import Projects from './components/Projects/Projects';
+import ProjectsSection from './sections/ProjectsSection';
 import ServicesSection from './sections/ServicesSection';
 
 // MUI
@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <BannerSection />
       <ServicesSection />
-      {/* <Projects /> */}
+      <ProjectsSection />
       {/* <Clients /> */}
 
       <Footer />
