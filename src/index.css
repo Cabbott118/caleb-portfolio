@@ -30,6 +30,10 @@
   }
 }
 
+:hover .profileImg {
+  transform: translateY(-10px);
+}
+
 /* scroll bar style  */
 body::-webkit-scrollbar {
   display: none;

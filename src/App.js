@@ -23,19 +23,6 @@ function App() {
 
       <Footer />
     </ThemeProvider>
-
-    // <ThemeProvider theme={theme}>
-    //   <BrowserRouter>
-    //     <Navbar />
-    //     <Routes>
-    //       <Route path='/' element={<Home />} />
-    //       <Route path='about' element={<About />} />
-    //       <Route path='contact' element={<Contact />} />
-    //       <Route path='projects' element={<Projects />} />
-    //     </Routes>
-    //     <Footer />
-    //   </BrowserRouter>
-    // </ThemeProvider>
   );
 }
 

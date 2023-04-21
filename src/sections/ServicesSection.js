@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import ServicesCard from '../components/Services/ServicesCard';
+import ServicesCards from '../components/Services/ServicesCards';
 
 // Utilities
 import { services } from '../utility/services';
@@ -18,7 +18,7 @@ const ServicesSection = () => {
   return (
     <Box
       sx={{
-        background: '#124559',
+        background: '#01161e',
       }}
     >
       <Container maxWidth='lg' id='services' sx={{ padding: '3rem' }}>
@@ -39,14 +39,7 @@ const ServicesSection = () => {
         >
           Here's what I can do for you
         </Typography>
-        <Grid
-          container
-          direction='row'
-          justifyContent='center'
-          alignItems='center'
-        >
-          <ServicesCard />
-        </Grid>
+        <ServicesCards />
       </Container>
     </Box>
   );
