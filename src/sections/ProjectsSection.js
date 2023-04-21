@@ -31,7 +31,6 @@ const ProjectsSection = () => {
           sx={{
             fontSize: '2rem',
             fontFamily: `'Secular One', 'sans-serif'`,
-            paddingBottom: '2rem',
           }}
         >
           Take a look at some of my latest works

@@ -1,79 +1,82 @@
 import React from 'react';
-import styled from 'styled-components';
 
 // MUI
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 const Project = (props) => {
-  const { img, disc } = props.item;
+  const { img, title, desc } = props.project;
   return (
-    <Container className='project'>
-      <img src={img} alt='project' />
+    <Card
+      sx={{
+        maxWidth: 345,
+        height: '10rem',
+        backgroundColor: '#4e5146',
+        m: '0 .5rem',
+        p: '.5rem',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        position: 'relative',
+        overflow: 'hidden',
+        '&:hover': {
+          backgroundColor: '#5f615b',
+        },
+      }}
+    >
+      <CardMedia
+        component='img'
+        height='140'
+        image={img}
+        alt='project'
+        sx={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          transition: 'transform 400ms ease-in-out',
+        }}
+      />
       <Box
-        className='desc'
         sx={[
           {
             position: 'absolute',
             right: '0',
             left: '0',
-            bottom: '-20rem',
+            bottom: '-6rem',
             '&:hover': {
-              bottom: '0',
+              bottom: '0px',
             },
-            textAlign: 'left',
-            padding: '0.5rem',
             background:
-              'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8))',
+              'linear-gradient(rgba(0,0,0, 0.100), rgba(0,0,0, 0.80))',
             transition: 'all 400ms ease-in-out',
           },
         ]}
       >
-        <Typography variant='h1' color='secondary' sx={{ fontSize: '1rem' }}>
-          Project title
+        <Typography
+          variant='h1'
+          color='secondary'
+          sx={{ fontSize: '1rem', fontWeight: '800' }}
+        >
+          {title}
         </Typography>
         <Typography
           variant='p'
           color='secondary'
           sx={{
             width: '90%',
-            fontSize: '0.8rem',
+            fontSize: '.8rem',
           }}
         >
-          {disc}
+          {desc}
         </Typography>
-        <Link underline='hover' sx={{ marginLeft: '.4rem' }}>
+        <Link href='/' sx={{ ml: '1rem' }}>
           Demo
         </Link>
       </Box>
-    </Container>
+    </Card>
   );
 };
 
 export default Project;
-
-const Container = styled.div`
-  height: 10rem;
-  background-color: #4e5156;
-  margin: 0 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms ease-in-out;
-  }
-
-  :hover > img {
-    transform: scale(1.3);
-  }
-
-  :hover > .desc {
-    bottom: 0;
-  }
-`;

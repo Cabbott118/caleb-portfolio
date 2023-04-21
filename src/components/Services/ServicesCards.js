@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 // Utilities
-import { services } from '../../utility/services';
+import { services } from '../../utility/data';
 
 const ServicesCards = () => {
   return (
@@ -46,7 +46,12 @@ const ServicesCards = () => {
                     alignItems='center'
                   >
                     <Grid item>
-                      <Typography gutterBottom variant='h5' color='#fff'>
+                      <Typography
+                        gutterBottom
+                        variant='h5'
+                        color='#fff'
+                        sx={{ fontWeight: '700' }}
+                      >
                         {service.title}
                       </Typography>
                     </Grid>

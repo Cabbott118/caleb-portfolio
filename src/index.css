@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .green {
   color: #01be96;
 }
