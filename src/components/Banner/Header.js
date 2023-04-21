@@ -3,6 +3,7 @@ import React from 'react';
 // MUI
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
@@ -68,45 +69,47 @@ const Header = (props) => {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component='nav' color='transparent' position='static'>
-        <Toolbar>
-          <IconButton
-            color='primary'
-            aria-label='open drawer'
-            edge='start'
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon color='secondary' />
-          </IconButton>
-          <Typography
-            variant='h6'
-            component='div'
-            color='primary'
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            {headerText}
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page.name}
-                href={page.location}
-                color='secondary'
-                className='navButton'
-                sx={[
-                  {
-                    textTransform: 'none',
-                    '&:hover': {
-                      color: '#01be96',
+        <Container>
+          <Toolbar>
+            <IconButton
+              color='primary'
+              aria-label='open drawer'
+              edge='start'
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' } }}
+            >
+              <MenuIcon color='secondary' />
+            </IconButton>
+            <Typography
+              variant='h6'
+              component='div'
+              color='primary'
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            >
+              {headerText}
+            </Typography>
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+              {pages.map((page) => (
+                <Button
+                  key={page.name}
+                  href={page.location}
+                  color='secondary'
+                  className='navButton'
+                  sx={[
+                    {
+                      textTransform: 'none',
+                      '&:hover': {
+                        color: '#01be96',
+                      },
                     },
-                  },
-                ]}
-              >
-                {page.name}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
+                  ]}
+                >
+                  {page.name}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
       </AppBar>
       <Box component='nav'>
         <Drawer
