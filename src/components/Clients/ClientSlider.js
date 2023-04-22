@@ -11,7 +11,7 @@ const ClientSlider = (props) => {
   return (
     <Box
       sx={{
-        background: '#598392',
+        background: '#fafafa',
         borderRadius: '5px',
         padding: '1.5rem 1rem',
         margin: '0 1rem',
