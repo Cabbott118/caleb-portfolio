@@ -3,11 +3,8 @@ import React from 'react';
 // MUI
 import Grid from '@mui/material/Grid';
 
-// import { Slide } from 'react-awesome-reveal';
-
 const ProfileImg = () => {
   return (
-    // <Slide direction='right'>
     <Grid item lg={6}>
       <img
         className='profileImg'
@@ -15,7 +12,6 @@ const ProfileImg = () => {
         alt='profile'
       />
     </Grid>
-    // </Slide>
   );
 };
 

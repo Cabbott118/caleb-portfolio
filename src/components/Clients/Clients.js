@@ -1,120 +1,66 @@
 import React, { useRef } from 'react';
-import styled from 'styled-components';
 
+// Components
 import ClientSlider from './ClientSlider';
 
 // MUI
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 // Utilities
 import { slickSettingsTestimonials, clients } from '../../utility/data';
-import Slider from 'react-slick';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import Slider from 'react-slick';
+import { Button } from '@mui/material';
 
 const Clients = () => {
   const arrowRef = useRef(null);
-  let clientDisc = clients.map((client, i) => (
+  const clientDesc = clients.map((client, i) => (
     <ClientSlider client={client} key={i} />
   ));
   return (
-    <Container id='clients'>
-      <Testimonials>
+    <Container
+      id='clients'
+      maxWidth='md'
+      sx={{
+        p: '4rem 0',
+      }}
+    >
+      <Box sx={{ m: '2rem 0 0 0', position: 'relative' }}>
         <Slider ref={arrowRef} {...slickSettingsTestimonials}>
-          {clientDisc}
+          {clientDesc}
         </Slider>
-        <Buttons>
-          <button onClick={() => arrowRef.current.slickPrev()}>
+        <Box sx={{ position: 'absolute', right: '.7rem', bottom: '-2rem' }}>
+          <Button
+            onClick={() => arrowRef.current.slickPrev()}
+            sx={{
+              backgroundColor: 'transparent',
+              ml: '.5rem',
+              border: 'none',
+              color: '#01be96',
+              cursor: 'pointer',
+              fontSize: '1.1rem',
+            }}
+          >
             <IoIosArrowBack />
-          </button>
-          <button onClick={() => arrowRef.current.slickNext()}>
+          </Button>
+          <Button
+            onClick={() => arrowRef.current.slickNext()}
+            sx={{
+              backgroundColor: 'transparent',
+              ml: '.5rem',
+              border: 'none',
+              color: '#01be96',
+              cursor: 'pointer',
+              fontSize: '1.1rem',
+            }}
+          >
             <IoIosArrowForward />
-          </button>
-        </Buttons>
-      </Testimonials>
+          </Button>
+        </Box>
+      </Box>
     </Container>
   );
 };
 
 export default Clients;
-
-// const Container = styled.div`
-//   width: 80%;
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 4rem 0;
-
-//   @media (max-width: 840px) {
-//     width: 90%;
-//   }
-
-//   span {
-//     font-weight: 700;
-//     text-transform: uppercase;
-//   }
-
-//   h1 {
-//     padding-top: 1rem;
-//     text-transform: capitalize;
-//   }
-
-//   .slick-list,
-//   .slick-slider,
-//   .slick-track {
-//     padding: 0;
-//   }
-
-//   .slick-dots {
-//     text-align: left;
-//     margin-left: 1rem;
-//   }
-
-//   .slick-dots li button:before {
-//     content: '';
-//   }
-
-//   .slick-dots li button {
-//     width: 9px;
-//     height: 4px;
-//     background: linear-gradient(
-//       159deg,
-//       rgb(45, 45, 58) 0%,
-//       rgb(43, 43, 53) 100%
-//     );
-//     padding: 0.1rem;
-//     margin-top: 1rem;
-//     transition: all 400ms ease-in-out;
-//     border-radius: 50px;
-//   }
-
-//   .slick-dots li.slick-active button {
-//     background: #01be96;
-//     width: 15px;
-//   }
-
-//   .slick-dots li {
-//     margin: 0;
-//   }
-// `;
-
-const Testimonials = styled.div`
-  margin-top: 2rem;
-  position: relative;
-`;
-const Buttons = styled.div`
-  position: absolute;
-  right: 0.7rem;
-  bottom: -2rem;
-
-  button {
-    background-color: transparent;
-    margin-left: 0.5rem;
-    border: none;
-    color: #01be96;
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-
-  @media (max-width: 530px) {
-    display: none;
-  }
-`;

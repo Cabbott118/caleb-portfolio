@@ -132,39 +132,39 @@ const slickSettingsTestimonials = {
 
 const clients = [
   {
-    name: 'John Michel',
-    position: 'web developer',
+    name: 'Linsi Abbott',
+    position: 'Wifey',
     img_url:
-      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
-    stars: 3,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      'https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-6/290012187_5585699794774425_6092875156347403056_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=dtQeUt8PaQsAX-zN3t_&_nc_ht=scontent.ftpa1-1.fna&oh=00_AfDF0Y877wC4XV4NNNU8W7csFmAOfYcdycEESarqPKrVgg&oe=6448CA29',
+    stars: 5,
+    desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
   },
   {
-    name: 'John Michel',
-    position: 'web developer',
+    name: 'Hartli Abbott',
+    position: 'Daughter',
     img_url:
-      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
-    stars: 4,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+      'https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/339055254_607307070956936_3728402710566778031_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KdGZY5gvQ8sAX8fuRAD&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfCG7EpyEVI23p3J3YU3OFeaEG3Au6VEP8mnC2xT-t4lAA&oe=6448AD57',
+    stars: 5,
+    desc: `DADA DADADADAD ADADADADA DADADADADAD ADADAD ADAD ADADADA DADADAD ADADADADA ADADADA DA
+    DAD ADADADAD ADADADA DADADADADA DAD`,
   },
   {
-    name: 'John Michel',
-    position: 'web developer',
+    name: 'Johnny Appleseed',
+    position: 'Web Developer',
     img_url:
       'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
   },
   {
-    name: 'John Michel',
-    position: 'web developer',
+    name: 'Gary Llil',
+    position: 'Best Buddy',
     img_url:
-      'https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg',
+      'https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-6/305311946_10230189130291502_3388004835895427014_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=z-6ByY6_P4QAX_f2OlY&_nc_ht=scontent.ftpa1-1.fna&oh=00_AfCnOTVaF8x1KsyPc1b92LejNXi6Z26-CINGh8402SLjHg&oe=64479BA5',
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
   },
 ];
