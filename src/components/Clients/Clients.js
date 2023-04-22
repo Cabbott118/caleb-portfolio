@@ -23,7 +23,7 @@ const Clients = () => {
       id='clients'
       maxWidth='md'
       sx={{
-        p: '4rem 0',
+        paddingBottom: '3rem',
       }}
     >
       <Box sx={{ m: '2rem 0 0 0', position: 'relative' }}>

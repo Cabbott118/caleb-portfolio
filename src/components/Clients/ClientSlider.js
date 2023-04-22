@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { IoIosQuote } from 'react-icons/io';
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 
 // MUI
 import Box from '@mui/material/Box';
@@ -34,7 +33,7 @@ const ClientSlider = (props) => {
             .fill()
             .map((_, i) => (
               <span className='star' key={i}>
-                <AiOutlineStar />
+                <AiFillStar />
               </span>
             ))}
         </Box>
